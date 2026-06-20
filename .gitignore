@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Office lock / temp files
+~$*.xlsx
+~$*.docx
+~$*.pptx
+*.tmp
+
+# Tooling / local session files
+.claude/
