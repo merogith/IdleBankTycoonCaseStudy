@@ -165,5 +165,5 @@ External data points (directional, third-party): AppQuantum / Sensor Tower (Nov 
 
 ## About
 
-**Meriç Erler** · Data Analyst, Game Economy & F2P Systems · Berlin
+**Meriç Erler** · Analyst · Game Economy & F2P Systems · Berlin
 Portfolio: <https://merogith.github.io/Portfolio/>
