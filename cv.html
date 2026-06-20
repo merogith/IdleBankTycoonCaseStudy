@@ -15,7 +15,8 @@
   /* ===========================================================
      One-page CV — self-contained, matches the case-study letterhead.
      Tokens, fonts and accents mirror index.html so the case study,
-     CV and cover letter read as one set. Print → Save as PDF → A4.
+     CV and cover letter read as one set. Print → Save as PDF → A4
+     (verified to land on a single sheet).
      =========================================================== */
   :root{
     --ink:#18181b; --ink-soft:#3f3f46; --muted:#5b5c62;
@@ -37,69 +38,78 @@
   strong{font-weight:600}
 
   /* masthead / id */
-  .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line)}
-  .masthead h1{font-family:var(--display);font-weight:600;font-size:30px;letter-spacing:-.015em;line-height:1.05;margin-bottom:6px}
+  .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .masthead h1{font-family:var(--display);font-weight:600;font-size:29px;letter-spacing:-.015em;line-height:1.05;margin-bottom:5px}
   .role{font-family:var(--mono);font-size:12.5px;color:var(--clay);letter-spacing:.01em}
   .links{display:flex;flex-wrap:wrap;gap:7px;justify-content:flex-end}
   .links a{font-family:var(--mono);font-size:11.5px;color:var(--blue);border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap}
   .links a:hover{border-color:var(--blue);background:#e6f0ea}
-  .contact{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:12px;display:flex;flex-wrap:wrap;gap:4px 14px}
+  .contact{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px;display:flex;flex-wrap:wrap;gap:4px 14px}
   .contact a{color:var(--blue)}
   .contact a:hover{text-decoration:underline}
 
   /* sections */
-  section{margin-top:22px}
-  h2{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:-.01em;margin-bottom:10px;display:flex;align-items:center;gap:9px}
-  h2::before{content:"";width:16px;height:2px;border-radius:2px;background:var(--blue);flex:none}
-  .lede{font-size:16px;line-height:1.55;color:var(--ink-soft);max-width:72ch}
+  section{margin-top:18px}
+  h2{font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:-.01em;margin-bottom:8px;display:flex;align-items:center;gap:9px}
+  h2::before{content:"";width:15px;height:2px;border-radius:2px;background:var(--blue);flex:none}
+  .lede{font-size:15px;line-height:1.5;color:var(--ink-soft);max-width:74ch}
   .lede strong{color:var(--ink)}
 
   /* skills */
-  .skills{display:grid;gap:8px}
-  .skill{display:grid;grid-template-columns:158px 1fr;gap:14px;align-items:baseline}
-  .skill .label{font-family:var(--mono);font-weight:600;font-size:12px;color:var(--blue)}
-  .skill .items{font-size:13.5px;color:var(--ink-soft)}
+  .skills{display:grid;gap:7px}
+  .skill{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:baseline}
+  .skill .label{font-family:var(--mono);font-weight:600;font-size:11.5px;color:var(--blue)}
+  .skill .items{font-size:13px;color:var(--ink-soft);line-height:1.45}
   .skill .items strong{color:var(--ink)}
   @media(max-width:560px){.skill{grid-template-columns:1fr;gap:2px}}
 
   /* entries */
-  .entry{margin-bottom:13px;break-inside:avoid;page-break-inside:avoid}
+  .entry{margin-bottom:11px;break-inside:avoid;page-break-inside:avoid}
   .entry__head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
-  .entry__role{font-family:var(--display);font-weight:600;font-size:15.5px}
+  .entry__role{font-family:var(--display);font-weight:600;font-size:15px}
   .entry__role a{border-bottom:1px solid rgba(47,107,79,.34);color:var(--blue)}
   .entry__role a:hover{border-bottom-color:var(--blue)}
-  .entry__meta{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
-  .entry ul{list-style:none;margin:5px 0 0;padding:0}
-  .entry li{position:relative;padding-left:16px;margin:4px 0;font-size:13.5px;color:var(--ink-soft);line-height:1.45}
-  .entry li::before{content:"";position:absolute;left:1px;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--blue)}
+  .entry__meta{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap}
+  .entry ul{list-style:none;margin:4px 0 0;padding:0}
+  .entry li{position:relative;padding-left:16px;margin:3px 0;font-size:13px;color:var(--ink-soft);line-height:1.42}
+  .entry li::before{content:"";position:absolute;left:1px;top:.58em;width:5px;height:5px;border-radius:50%;background:var(--blue)}
   .entry li strong{color:var(--ink)}
 
-  .meta-line{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:6px}
+  .meta-line{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:5px}
   .meta-line strong{color:var(--ink-soft)}
 
-  footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--muted)}
+  footer{margin-top:22px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--muted)}
 
   :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}
   @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
-  /* ---- PRINT: tuned to a single A4 sheet ---- */
+  /* ---- PRINT: tuned to land on a single A4 sheet ---- */
   @media print{
-    @page{size:A4;margin:13mm}
-    body{background:#fff;font-size:9.7pt;line-height:1.34}
+    @page{size:A4;margin:9mm 12mm}
+    body{background:#fff;font-size:9pt;line-height:1.25}
     .wrap{max-width:none;margin:0;padding:0}
     .links{display:none}
     a{color:#18181b}
     .contact a,.entry__role a{color:#18181b}
-    section{margin-top:13px}
-    h2{font-size:12.5pt;margin-bottom:6px}
-    .lede{font-size:9.8pt}
-    .skills{gap:5px}
-    .skill .items{font-size:9.4pt}
-    .entry{margin-bottom:8px}
-    .entry li{font-size:9.4pt;margin:2px 0}
+    .masthead{padding-bottom:6px}
+    .masthead h1{font-size:18pt}
+    .role{font-size:8.6pt}
+    .contact{margin-top:5px;font-size:8.3pt}
+    section{margin-top:4px}
+    h2{font-size:10.6pt;margin-bottom:2.5px}
+    .lede{font-size:9pt;line-height:1.28}
+    .skills{gap:1px}
+    .skill{grid-template-columns:130px 1fr}
+    .skill .items{font-size:8.5pt;line-height:1.28}
+    .skill .label{font-size:8.3pt}
+    .entry{margin-bottom:3px}
+    .entry__role{font-size:9.4pt}
+    .entry ul{margin-top:1px}
+    .entry li{font-size:8.5pt;margin:1px 0;line-height:1.28}
+    .meta-line{font-size:8.4pt;margin-top:2px}
     .entry,.skill,h2{break-inside:avoid;page-break-inside:avoid}
     h2{break-after:avoid;page-break-after:avoid}
-    footer{margin-top:14px}
+    footer{display:none}
   }
 </style>
 </head>
@@ -122,19 +132,19 @@
     <a href="mailto:mericerler@gmail.com">mericerler@gmail.com</a>
     <span>·</span><a href="https://www.linkedin.com/in/mericerler">linkedin.com/in/mericerler</a>
     <span>·</span><a href="https://github.com/merogith">github.com/merogith</a>
-    <span>·</span><span>Berlin · EU work-authorized · EN / TR</span>
+    <span>·</span><span>Berlin</span>
   </div>
 
   <!-- ===== PROFILE ===== -->
   <section>
     <h2>Profile</h2>
     <p class="lede">
-      I design and balance game economies — and I got here the long way round. Three years pulling signal
+      I design and balance game economies — and I got here the long way round: three years pulling signal
       out of messy data across pharma, edtech and equity research, plus a stubborn habit of taking games
-      apart to see how their economies hold up. To prove I could do the job, I built a full economy-design
-      study on <strong>Idle Bank Tycoon</strong>: two live-ops levers, each modelled end-to-end with ROI
-      math, a sensitivity grid and an A/B plan. I also build and ship my own browser games, so a system
-      reads to me two ways — from the spreadsheet and from the code.
+      apart to see how their economies hold up. To prove I could do the job I built a full economy-design
+      study on <strong>Idle Bank Tycoon</strong> — two live-ops levers, each modelled end-to-end with ROI
+      math, a sensitivity grid and an A/B plan. I build and ship my own browser games too, so a system
+      reads to me from both the spreadsheet and the code.
     </p>
   </section>
 
@@ -144,11 +154,11 @@
     <div class="skills">
       <div class="skill">
         <span class="label">Game economy &amp; F2P</span>
-        <span class="items">Economy modelling &amp; balancing · sources/sinks &amp; inflation · progression curves · monetisation (IAP, rewarded ads, ARPDAU / ARPPU, eCPM) · retention (D1/D7/D30) · player segmentation &amp; motivation</span>
+        <span class="items">Economy modelling &amp; balancing · sources/sinks &amp; inflation · progression curves · monetisation (IAP, rewarded ads, ARPDAU / ARPPU, eCPM) · retention (D1/D7/D30) · player segmentation</span>
       </div>
       <div class="skill">
         <span class="label">Spreadsheet modelling</span>
-        <span class="items">Google Sheets / spreadsheet modelling — parameter-driven models, 400+ linked formulas, sensitivity grids, scenario / A/B design</span>
+        <span class="items">Parameter-driven models in Google Sheets — 400+ linked formulas, sensitivity grids, scenario / A/B design</span>
       </div>
       <div class="skill">
         <span class="label">Data &amp; methods</span>
@@ -160,7 +170,7 @@
       </div>
       <div class="skill">
         <span class="label">Build</span>
-        <span class="items">Custom game engines in JavaScript / TypeScript (Canvas, game loop, rules-vs-render separation) — concepts that carry over to Unity · Supabase · Git</span>
+        <span class="items">Custom JS / TS game engines (Canvas, game loop, rules-vs-render separation) — concepts that carry over to Unity · Supabase · Git</span>
       </div>
     </div>
   </section>
@@ -175,8 +185,8 @@
         <span class="entry__meta">Spreadsheet model · A/B design</span>
       </div>
       <ul>
-        <li>Found the late-game problem in the numbers: by level 60, idle cash piles up to <strong>4,900–21,600×</strong> the next upgrade's cost — progression stops mattering. Traced it by rebuilding the full income-vs-cost curve in a parameter-driven model (<strong>400+ linked formulas</strong>, one inputs tab).</li>
-        <li>Designed two live-ops levers to fix it — a hard-currency liquidity lock and income-scaled rewarded-ad tuning — and modelled each to blended <strong>ARPDAU +15.5%</strong> (~$2M/yr at static DAU), with a sensitivity grid and retention guardrails. My call: ship the ad tuning first, treat the loan as the bigger retention bet.</li>
+        <li>Found the late-game problem in the numbers: by level 60, idle cash piles to <strong>4,900–21,600×</strong> the next upgrade's cost — progression stops mattering. Diagnosed by rebuilding the full income-vs-cost curve (<strong>400+ linked formulas</strong>, one inputs tab).</li>
+        <li>Designed two live-ops levers to fix it — a hard-currency liquidity lock and income-scaled rewarded-ad tuning — modelling blended <strong>ARPDAU +15.5%</strong> (~$2M/yr at static DAU) with a sensitivity grid and retention guardrails. My call: ship the ads first, treat the loan as the bigger retention bet.</li>
       </ul>
     </div>
 
@@ -186,8 +196,8 @@
         <span class="entry__meta">Python · scikit-learn · SQL</span>
       </div>
       <ul>
-        <li>Caught two premium items quietly breaking the game (<strong>61% win rate</strong>, significant on a z-test) and a slow coin inflation — sinks claw back only <strong>~63%</strong> of what's minted. Each finding shipped with the balancing fix, not just the chart.</li>
-        <li>Could flag a future payer from their first three days (<strong>AUC 0.80</strong>) using D1/D7/D30 cohorts — turning that into a concrete onboarding lever rather than a dashboard metric.</li>
+        <li>Caught two premium items quietly breaking the game (<strong>61% win rate</strong>, significant on a z-test) and slow coin inflation — sinks claw back only <strong>~63%</strong> of what's minted — each paired with the balancing fix.</li>
+        <li>Flagged future payers from their first three days (<strong>AUC 0.80</strong>) via D1/D7/D30 cohorts, turning it into an onboarding lever, not a dashboard metric.</li>
       </ul>
     </div>
 
@@ -197,27 +207,18 @@
         <span class="entry__meta">Python · statsmodels (OLS) · SQL</span>
       </div>
       <ul>
-        <li>Showed across <strong>150+ years</strong> that expensive markets pay you back less: higher valuation (CAPE) predicts <strong>lower</strong> forward 10-year real returns (<strong>p ≈ 1e-40</strong>), with the worst real drawdown a brutal <strong>−81%</strong>. Built for a decision, not a paper.</li>
+        <li>Showed across <strong>150+ years</strong> that expensive markets pay back less: higher valuation (CAPE) predicts <strong>lower</strong> forward 10-year real returns (<strong>p ≈ 1e-40</strong>); worst real drawdown <strong>−81%</strong>. Built for a decision, not a paper.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry__head">
-        <span class="entry__role">Also built — playable browser games</span>
+        <span class="entry__role">Also built &amp; exploring</span>
         <span class="entry__meta">Custom JS engines · Supabase</span>
       </div>
       <ul>
-        <li><strong>Battle</strong> — a Pokémon-style turn-based RPG with <strong>online PvP</strong>, on an engine I wrote from scratch (+ Supabase); <strong>RocketIO</strong> — real-time hex strategy, 14 factions and an in-game <strong>missile economy</strong>; plus mobile-first demos. All playable in-browser, <strong>phone &amp; desktop responsive</strong> — <a href="https://merogith.github.io/Portfolio/">merogith.github.io/Portfolio</a>.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry__head">
-        <span class="entry__role">Next on my list — idle games</span>
-        <span class="entry__meta">Personal roadmap</span>
-      </div>
-      <ul>
-        <li><strong>Berlin Döner Haus</strong>, an idle tycoon inspired by the Dönerbox at U8; and a single-player <strong>idle RPG in a WoW-style MMO world</strong>, drawing on Slayer Legend, Tap Titans, Legends of Idleon and Clicker Heroes. Idle systems are where I want to spend the next few years.</li>
+        <li><strong>Battle</strong> — Pokémon-style turn-based RPG with <strong>online PvP</strong> on an engine I wrote from scratch (+ Supabase); <strong>RocketIO</strong> — real-time hex strategy with an in-game <strong>missile economy</strong>; plus mobile-first demos. All phone &amp; desktop responsive — <a href="https://merogith.github.io/Portfolio/">merogith.github.io/Portfolio</a>.</li>
+        <li><strong>Next on my list — idle games:</strong> <em>Berlin Döner Haus</em>, an idle tycoon inspired by the Dönerbox at U8; and a single-player idle RPG in a WoW-style MMO world, drawing on Slayer Legend, Tap Titans, Legends of Idleon and Clicker Heroes.</li>
       </ul>
     </div>
   </section>
@@ -288,7 +289,7 @@
   <!-- ===== LANGUAGES ===== -->
   <section>
     <h2>Languages</h2>
-    <p class="meta-line">English — full professional · Turkish — native · Dual Portuguese / Turkish citizen · available immediately</p>
+    <p class="meta-line">English — full professional · Turkish — native · Dual Portuguese / Turkish citizen (EU work-authorized) · available immediately</p>
   </section>
 
   <footer>© 2026 Meriç Erler · Berlin · One-page CV prepared for the Game Economy Designer application at Kolibri Games.</footer>
