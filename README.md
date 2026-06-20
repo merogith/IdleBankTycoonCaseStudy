@@ -139,14 +139,19 @@ To explore it: open the workbook, go to the Parameters tab, and change any blue 
 ```
 IdleBankTycoonCaseStudy/
 ├── README.md                              ← this case study
+├── idle-bank-tycoon.html                  ← the case-study site (single source for the PDF)
 ├── Idle_Bank_Tycoon_Economy_Model.xlsx    ← the working model (change a blue cell)
+├── scripts/
+│   └── build-pdf.sh                       ← rebuilds the PDF from the site (headless Chrome)
 ├── docs/
-│   └── case-study.pdf                     ← full written case study
+│   └── case-study.pdf                     ← build output of idle-bank-tycoon.html — run scripts/build-pdf.sh
 └── charts/                                ← figures used above, exported from the model
     ├── 01-income-vs-cost.png
     ├── 02-idle-cash-surplus.png
     └── 03-loan-sensitivity.png
 ```
+
+> The PDF is generated from `idle-bank-tycoon.html`, not maintained by hand. After editing the site, run `scripts/build-pdf.sh` (needs Chrome/Chromium) to regenerate it so the two never drift apart.
 
 ---
 
