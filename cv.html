@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meriç Erler — One-page CV · Game Economy Designer</title>
+<meta name="description" content="One-page CV for Meriç Erler — Game Economy Designer / F2P & idle systems. Economy modelling, balancing, monetisation and retention. Prepared for Kolibri Games.">
+<meta name="author" content="Meriç Erler">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232f6b4f'/><text x='50' y='68' font-family='Georgia,serif' font-size='44' fill='%23faf8f3' text-anchor='middle'>ME</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  /* ===========================================================
+     One-page CV — self-contained, matches the case-study letterhead.
+     Tokens, fonts and accents mirror index.html so the case study,
+     CV and cover letter read as one set. Print → Save as PDF → A4.
+     =========================================================== */
+  :root{
+    --ink:#18181b; --ink-soft:#3f3f46; --muted:#5b5c62;
+    --paper:#faf8f3; --line:#e7e3da; --chip:#f3f1ea;
+    --blue:#2f6b4f; --blue-deep:#245a40; --clay:#c2632e;
+    --display:"Fraunces",Georgia,"Times New Roman",serif;
+    --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:var(--body);font-size:16px;line-height:1.5;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:34px 24px 70px}
+  a{color:inherit;text-decoration:none}
+  strong{font-weight:600}
+
+  /* masthead / id */
+  .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .masthead h1{font-family:var(--display);font-weight:600;font-size:30px;letter-spacing:-.015em;line-height:1.05;margin-bottom:6px}
+  .role{font-family:var(--mono);font-size:12.5px;color:var(--clay);letter-spacing:.01em}
+  .links{display:flex;flex-wrap:wrap;gap:7px;justify-content:flex-end}
+  .links a{font-family:var(--mono);font-size:11.5px;color:var(--blue);border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap}
+  .links a:hover{border-color:var(--blue);background:#e6f0ea}
+  .contact{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:12px;display:flex;flex-wrap:wrap;gap:4px 14px}
+  .contact a{color:var(--blue)}
+  .contact a:hover{text-decoration:underline}
+
+  /* sections */
+  section{margin-top:22px}
+  h2{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:-.01em;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+  h2::before{content:"";width:16px;height:2px;border-radius:2px;background:var(--blue);flex:none}
+  .lede{font-size:16px;line-height:1.55;color:var(--ink-soft);max-width:72ch}
+  .lede strong{color:var(--ink)}
+
+  /* skills */
+  .skills{display:grid;gap:8px}
+  .skill{display:grid;grid-template-columns:158px 1fr;gap:14px;align-items:baseline}
+  .skill .label{font-family:var(--mono);font-weight:600;font-size:12px;color:var(--blue)}
+  .skill .items{font-size:13.5px;color:var(--ink-soft)}
+  .skill .items strong{color:var(--ink)}
+  @media(max-width:560px){.skill{grid-template-columns:1fr;gap:2px}}
+
+  /* entries */
+  .entry{margin-bottom:13px;break-inside:avoid;page-break-inside:avoid}
+  .entry__head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+  .entry__role{font-family:var(--display);font-weight:600;font-size:15.5px}
+  .entry__role a{border-bottom:1px solid rgba(47,107,79,.34);color:var(--blue)}
+  .entry__role a:hover{border-bottom-color:var(--blue)}
+  .entry__meta{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+  .entry ul{list-style:none;margin:5px 0 0;padding:0}
+  .entry li{position:relative;padding-left:16px;margin:4px 0;font-size:13.5px;color:var(--ink-soft);line-height:1.45}
+  .entry li::before{content:"";position:absolute;left:1px;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--blue)}
+  .entry li strong{color:var(--ink)}
+
+  .meta-line{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:6px}
+  .meta-line strong{color:var(--ink-soft)}
+
+  footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--muted)}
+
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+  /* ---- PRINT: tuned to a single A4 sheet ---- */
+  @media print{
+    @page{size:A4;margin:13mm}
+    body{background:#fff;font-size:9.7pt;line-height:1.34}
+    .wrap{max-width:none;margin:0;padding:0}
+    .links{display:none}
+    a{color:#18181b}
+    .contact a,.entry__role a{color:#18181b}
+    section{margin-top:13px}
+    h2{font-size:12.5pt;margin-bottom:6px}
+    .lede{font-size:9.8pt}
+    .skills{gap:5px}
+    .skill .items{font-size:9.4pt}
+    .entry{margin-bottom:8px}
+    .entry li{font-size:9.4pt;margin:2px 0}
+    .entry,.skill,h2{break-inside:avoid;page-break-inside:avoid}
+    h2{break-after:avoid;page-break-after:avoid}
+    footer{margin-top:14px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== MASTHEAD / IDENTITY ===== -->
+  <header class="masthead">
+    <div>
+      <h1>Meriç Erler</h1>
+      <div class="role">Game economy &amp; F2P systems · data-driven balancing · Berlin</div>
+    </div>
+    <nav class="links" aria-label="Documents">
+      <a href="https://merogith.github.io/IdleBankTycoonCaseStudy/">Case study ↗</a>
+      <a href="cover-letter.html">Cover letter ↗</a>
+      <a href="https://merogith.github.io/Portfolio/">Portfolio ↗</a>
+    </nav>
+  </header>
+  <div class="contact">
+    <a href="mailto:mericerler@gmail.com">mericerler@gmail.com</a>
+    <span>·</span><a href="https://www.linkedin.com/in/mericerler">linkedin.com/in/mericerler</a>
+    <span>·</span><a href="https://github.com/merogith">github.com/merogith</a>
+    <span>·</span><span>Berlin · EU work-authorized · EN / TR</span>
+  </div>
+
+  <!-- ===== PROFILE ===== -->
+  <section>
+    <h2>Profile</h2>
+    <p class="lede">
+      I design and balance game economies — and I got here the long way round. Three years pulling signal
+      out of messy data across pharma, edtech and equity research, plus a stubborn habit of taking games
+      apart to see how their economies hold up. To prove I could do the job, I built a full economy-design
+      study on <strong>Idle Bank Tycoon</strong>: two live-ops levers, each modelled end-to-end with ROI
+      math, a sensitivity grid and an A/B plan. I also build and ship my own browser games, so a system
+      reads to me two ways — from the spreadsheet and from the code.
+    </p>
+  </section>
+
+  <!-- ===== CORE SKILLS ===== -->
+  <section>
+    <h2>Core skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <span class="label">Game economy &amp; F2P</span>
+        <span class="items">Economy modelling &amp; balancing · sources/sinks &amp; inflation · progression curves · monetisation (IAP, rewarded ads, ARPDAU / ARPPU, eCPM) · retention (D1/D7/D30) · player segmentation &amp; motivation</span>
+      </div>
+      <div class="skill">
+        <span class="label">Spreadsheet modelling</span>
+        <span class="items">Google Sheets / spreadsheet modelling — parameter-driven models, 400+ linked formulas, sensitivity grids, scenario / A/B design</span>
+      </div>
+      <div class="skill">
+        <span class="label">Data &amp; methods</span>
+        <span class="items">Python (pandas, scikit-learn, statsmodels) · SQL (window functions) · A/B testing · regression · z-tests · logistic models · forecasting</span>
+      </div>
+      <div class="skill">
+        <span class="label">BI &amp; reporting</span>
+        <span class="items">Tableau · Power BI · Looker Studio · Google Analytics · KPI dashboards</span>
+      </div>
+      <div class="skill">
+        <span class="label">Build</span>
+        <span class="items">Custom game engines in JavaScript / TypeScript (Canvas, game loop, rules-vs-render separation) — concepts that carry over to Unity · Supabase · Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SELECTED PROJECTS ===== -->
+  <section>
+    <h2>Selected projects</h2>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role"><a href="https://merogith.github.io/IdleBankTycoonCaseStudy/">Idle Bank Tycoon — Game Economy Design Case Study</a></span>
+        <span class="entry__meta">Spreadsheet model · A/B design</span>
+      </div>
+      <ul>
+        <li>Found the late-game problem in the numbers: by level 60, idle cash piles up to <strong>4,900–21,600×</strong> the next upgrade's cost — progression stops mattering. Traced it by rebuilding the full income-vs-cost curve in a parameter-driven model (<strong>400+ linked formulas</strong>, one inputs tab).</li>
+        <li>Designed two live-ops levers to fix it — a hard-currency liquidity lock and income-scaled rewarded-ad tuning — and modelled each to blended <strong>ARPDAU +15.5%</strong> (~$2M/yr at static DAU), with a sensitivity grid and retention guardrails. My call: ship the ad tuning first, treat the loan as the bigger retention bet.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role"><a href="https://merogith.github.io/Portfolio/projects/game-economy.html">Free-to-Play Game Economy &amp; Balance</a></span>
+        <span class="entry__meta">Python · scikit-learn · SQL</span>
+      </div>
+      <ul>
+        <li>Caught two premium items quietly breaking the game (<strong>61% win rate</strong>, significant on a z-test) and a slow coin inflation — sinks claw back only <strong>~63%</strong> of what's minted. Each finding shipped with the balancing fix, not just the chart.</li>
+        <li>Could flag a future payer from their first three days (<strong>AUC 0.80</strong>) using D1/D7/D30 cohorts — turning that into a concrete onboarding lever rather than a dashboard metric.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role"><a href="https://merogith.github.io/Portfolio/projects/stock-market.html">US Stock-Market Valuation &amp; Risk</a></span>
+        <span class="entry__meta">Python · statsmodels (OLS) · SQL</span>
+      </div>
+      <ul>
+        <li>Showed across <strong>150+ years</strong> that expensive markets pay you back less: higher valuation (CAPE) predicts <strong>lower</strong> forward 10-year real returns (<strong>p ≈ 1e-40</strong>), with the worst real drawdown a brutal <strong>−81%</strong>. Built for a decision, not a paper.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">Also built — playable browser games</span>
+        <span class="entry__meta">Custom JS engines · Supabase</span>
+      </div>
+      <ul>
+        <li><strong>Battle</strong> — a Pokémon-style turn-based RPG with <strong>online PvP</strong>, on an engine I wrote from scratch (+ Supabase); <strong>RocketIO</strong> — real-time hex strategy, 14 factions and an in-game <strong>missile economy</strong>; plus mobile-first demos. All playable in-browser, <strong>phone &amp; desktop responsive</strong> — <a href="https://merogith.github.io/Portfolio/">merogith.github.io/Portfolio</a>.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">Next on my list — idle games</span>
+        <span class="entry__meta">Personal roadmap</span>
+      </div>
+      <ul>
+        <li><strong>Berlin Döner Haus</strong>, an idle tycoon inspired by the Dönerbox at U8; and a single-player <strong>idle RPG in a WoW-style MMO world</strong>, drawing on Slayer Legend, Tap Titans, Legends of Idleon and Clicker Heroes. Idle systems are where I want to spend the next few years.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">Independent Financial Coach — Self-employed</span>
+        <span class="entry__meta">2024 – Present</span>
+      </div>
+      <ul>
+        <li>Run a one-to-one practice turning budgeting, saving and investing into plain, actionable decisions; design each client's plan and run weekly check-ins in English and Turkish.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">Business Intelligence Analyst — Saksı Kampüs (early-stage edtech)</span>
+        <span class="entry__meta">Dec 2021 – Oct 2022</span>
+      </div>
+      <ul>
+        <li>Tracked retention, engagement and CAC in Google Analytics &amp; Looker Studio and steered Meta Ads spend; wrote the business plan and growth projections behind a seed crowdfunding raise.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">Omnichannel Data Analyst — Viatris Inc.</span>
+        <span class="entry__meta">Dec 2022 – Sep 2023</span>
+      </div>
+      <ul>
+        <li>Consolidated records into one master record per person across <strong>70+ markets</strong> (Salesforce); fuzzy matching cut manual validation by <strong>40%</strong>. Cleaned 1M+ records with SQL.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">Sales &amp; Financial Analysis Intern — Garanti BBVA Investment</span>
+        <span class="entry__meta">Jul 2021 – Sep 2021</span>
+      </div>
+      <ul>
+        <li>Built DCF and comparable-company valuation models and set target prices for sell-side equity research.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">M.Sc. Corporate Management — University of Europe for Applied Sciences, Berlin</span>
+        <span class="entry__meta">2022 – 2024</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry__head">
+        <span class="entry__role">B.Sc. Environmental Engineering — METU, Ankara</span>
+        <span class="entry__meta">2013 – 2021</span>
+      </div>
+    </div>
+    <p class="meta-line"><strong>Honors:</strong> Published paper, <em>Generative AI in Pharma</em> (ADCAIJ) · Google AI Essentials · METU summer-practice award</p>
+  </section>
+
+  <!-- ===== LANGUAGES ===== -->
+  <section>
+    <h2>Languages</h2>
+    <p class="meta-line">English — full professional · Turkish — native · Dual Portuguese / Turkish citizen · available immediately</p>
+  </section>
+
+  <footer>© 2026 Meriç Erler · Berlin · One-page CV prepared for the Game Economy Designer application at Kolibri Games.</footer>
+
+</div>
+</body>
+</html>
