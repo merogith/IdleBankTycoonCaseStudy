@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Rebuild docs/case-study.pdf from the single source, idle-bank-tycoon.html.
+# Rebuild docs/case-study.pdf from the single source, index.html.
 #
 # The PDF is a BUILD OUTPUT, not a hand-maintained file. The original was a
 # browser "Print to PDF" (Producer: Skia/PDF, i.e. Chromium), which is why it
@@ -13,7 +13,7 @@
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
-SRC="idle-bank-tycoon.html"
+SRC="index.html"
 OUT="docs/case-study.pdf"
 
 # Find a usable Chrome/Chromium binary. google-chrome is tried first because the

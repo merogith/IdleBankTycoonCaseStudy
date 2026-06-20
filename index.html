@@ -5,17 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Idle Bank Tycoon — Economy Design Case Study · Meriç Erler</title>
 <meta name="description" content="A self-directed game-economy design case study for Idle Bank Tycoon (Kolibri Games): a parameter-driven economy model, a liquidity-lock sink mechanic, rewarded-ad tuning, and an A/B test plan. +15.5% modelled ARPDAU.">
+<meta name="author" content="Meriç Erler">
+<link rel="canonical" href="https://merogith.github.io/IdleBankTycoonCaseStudy/">
+<meta property="og:title" content="Idle Bank Tycoon — Economy Design Case Study">
+<meta property="og:description" content="A self-directed game-economy design case study: a parameter-driven economy model, a liquidity-lock sink, rewarded-ad tuning, and an A/B test plan. +15.5% modelled ARPDAU.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://merogith.github.io/IdleBankTycoonCaseStudy/">
+<meta property="og:image" content="https://merogith.github.io/IdleBankTycoonCaseStudy/charts/03-loan-sensitivity.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Idle Bank Tycoon — Economy Design Case Study">
+<meta name="twitter:description" content="Game-economy design case study: economy model, liquidity-lock sink, rewarded-ad tuning, A/B test plan. +15.5% modelled ARPDAU.">
+<meta name="twitter:image" content="https://merogith.github.io/IdleBankTycoonCaseStudy/charts/03-loan-sensitivity.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232f6b4f'/><text x='50' y='68' font-family='Georgia,serif' font-size='44' fill='%23faf8f3' text-anchor='middle'>ME</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1a1a1a; --ink-soft:#46474a; --muted:#6b6c70;
-    --paper:#fcfcfb; --line:#e7e7e2; --chip:#f1f4f8;
-    --blue:#2e5a88; --blue-deep:#1f4468; --clay:#bf5f3a;
-    --display:"Space Grotesk",system-ui,sans-serif;
-    --body:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
-    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --ink:#18181b; --ink-soft:#3f3f46; --muted:#5b5c62;
+    --paper:#faf8f3; --line:#e7e3da; --chip:#f3f1ea;
+    --blue:#2f6b4f; --blue-deep:#245a40; --clay:#c2632e;
+    --display:"Fraunces",Georgia,"Times New Roman",serif;
+    --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
@@ -28,16 +40,16 @@
 
   /* masthead — report letterhead (not site nav) */
   .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:22px 0 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-  .masthead .name{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em;color:var(--ink);line-height:1.1}
+  .masthead .name{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.01em;color:var(--ink);line-height:1.1}
   .masthead .role{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:5px}
   .port-link{font-family:var(--mono);font-size:12.5px;color:var(--blue);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 13px;white-space:nowrap}
-  .port-link:hover{border-color:var(--blue);background:#f4f7fb}
+  .port-link:hover{border-color:var(--blue);background:#e6f0ea}
 
   /* hero */
   header.hero{padding:40px 0 8px}
   .eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:.14em;font-size:11.5px;color:var(--blue);margin:26px 0 14px;display:flex;align-items:center;gap:10px}
   .eyebrow::before{content:"";width:22px;height:2px;background:var(--blue);display:inline-block}
-  h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,5.4vw,46px);line-height:1.05;letter-spacing:-.02em;margin:0 0 18px}
+  h1{font-family:var(--display);font-weight:600;font-size:clamp(31px,5.4vw,47px);line-height:1.06;letter-spacing:-.015em;margin:0 0 18px}
   .lede{font-size:20px;line-height:1.5;color:var(--ink-soft);margin:0 0 26px;max-width:44ch}
   .actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
   .btn{font-family:var(--mono);font-size:12.5px;text-decoration:none;border-radius:999px;padding:9px 16px;border:1px solid var(--line);color:var(--ink);transition:border-color .15s,color .15s,background .15s}
@@ -62,7 +74,7 @@
   p{margin:0 0 16px}
   strong{font-weight:600}
   .num{font-family:var(--mono);font-weight:500;font-size:.94em;background:var(--chip);padding:1px 5px;border-radius:4px}
-  a.inl{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(46,90,136,.3)}
+  a.inl{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(47,107,79,.34)}
   a.inl:hover{border-bottom-color:var(--blue)}
 
   ul.clean{list-style:none;padding:0;margin:0 0 16px}
@@ -74,7 +86,7 @@
 
   /* callout */
   .callout{border-left:3px solid var(--clay);background:#fbf6f3;padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0;font-size:16px;color:var(--ink-soft)}
-  .callout.blue{border-left-color:var(--blue);background:#f4f7fb}
+  .callout.blue{border-left-color:var(--blue);background:#e6f0ea}
 
   /* table */
   .tbl{width:100%;border-collapse:collapse;margin:6px 0 14px;font-size:15px}
