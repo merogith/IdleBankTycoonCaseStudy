@@ -145,4 +145,6 @@ Each question lists options; ✅ marks the recommended pick, followed by the rat
 - **Q9** — `--muted` darkened `#7c7d82 → #6b6c70` (4.00:1 → ~5.1:1).
 - **Q10** — Worked-example note adds early (~Bank 10) and late (~Bank 50) illustrations and a stress-test of the loan design knobs (boost 1.25–2.0×, term 2–8h, principal 25–50%).
 
-*Note: the same guardrail-#6 wording also lives in the `.xlsx` Loan Desk tab and should be corrected there to match.*
+- **Model (`.xlsx`)** — the same framing lived in the workbook (README, Loan Desk, KPI Impact tabs). The Loan Desk is now relabelled a liquidity lock with a hard-currency sink, guardrail #6 corrected to stop claiming a net soft drain, and the interstitial/D1 caveat and tuning-sweep wording brought into line. Charts, styles, and formulas untouched.
+
+*Remaining follow-up: `docs/case-study.pdf` is the only artifact still carrying the original "soft-currency sink" framing. It needs its authoring source to regenerate cleanly, so it is left for a follow-up rather than edited as a binary.*
