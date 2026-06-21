@@ -54,11 +54,11 @@ cv_blocks = [
     ("contact", CONTACT_CV),
     ("h2", "Summary"),
     ("p", S((
-        "I work a game economy from three sides at once: as a P&L, as a design system, and as the "
-        "code that runs it. Three years as a business and financial data analyst (pharma, edtech, "
-        "equity research) built the first; moving into game economy design and building my own games "
-        "built the rest. Economic modelling, statistics, monetization and KPIs are the toolkit; the "
-        "Idle Bank Tycoon case study, my portfolio and the cover letter are the evidence.", False))),
+        "Game Economy Designer combining three years of business analytics (pharma, edtech, equity "
+        "research) with hands-on indie game design and development. I balance progression curves, "
+        "model monetization levers, and diagnose the health of a game economy from an analytical "
+        "angle, building the spreadsheets and dashboards behind the call. The cover letter, portfolio "
+        "and an Idle Bank Tycoon case study (linked) hold the proof.", False))),
     ("h2", "Core Skills"),
     ("bullets", [
         S(("Game economy & F2P: ", True), ("economy modelling and balancing; sources/sinks and inflation control; progression curves; monetization (IAP, rewarded ads, ARPDAU, ARPPU, eCPM); retention (D1/D7/D30); player psychology, motivation and segmentation.", False)),
@@ -70,10 +70,10 @@ cv_blocks = [
     ("h2", "Selected Projects"),
     ("bullets", [
         S(("Idle Bank Tycoon - Game Economy Design Case Study ", True), ("(economy design, monetization, A/B). A redesign aimed at exactly what this role owns: I diagnosed a late-game cash glut, then designed two live-ops monetization levers with anti-inflation guardrails, all in a documented, parameter-driven spreadsheet model. Modelled to a blended ~+15.5% ARPDAU, but the part I would point to is the call: ship the lower-risk ad lever first and treat the loan as a retention bet to be measured, not assumed. Full math, sensitivity and sources in the linked study.", False)),
-        S(("Free-to-Play Game Economy & Balance ", True), ("(Python, scikit-learn, SQL). The closest analog to live balancing: in a real F2P economy I caught two exploit-grade premium items and a slow currency inflation and shipped the fixes, the unexpected-behaviour problem this role exists to prevent. I also turned first-days cohort data into a model that flags likely payers early, the basis for a concrete onboarding lever. Methods and results in the portfolio.", False)),
+        S(("F2P Game Economy & Balance ", True), ("(Python, scikit-learn, SQL; synthetic data). The closest I have come to live-ops balancing: on synthetic F2P telemetry I built myself, I diagnosed two exploit-grade premium items and a slow currency inflation and modelled the fixes, the unexpected-behaviour problem this role exists to prevent. I also built an early-payer flag from Day 1-3 cohort data (AUC 0.80), the basis for a concrete onboarding lever. Methods and results in the portfolio.", False)),
         S(("US Stock-Market Valuation & Risk ", True), ("(Python, statsmodels, SQL). The financial-analyst foundation under the design work: a 150-year study linking market valuation to long-run returns and drawdown risk, built to drive a real allocation call. Full analysis in the portfolio.", False)),
         S(("Games I designed & balanced ", True), ("(custom JavaScript engines). Proof I balance economies inside real, playable games: Battle, a turn-based RPG with online PvP where every stat and reward has to stay fair, and RocketIO, a real-time strategy game built on a resource-and-missile economy. Both run on engines I wrote myself; playable in the portfolio (merogith.github.io/Portfolio).", False)),
-        S(("Next on my list - idle games. ", True), ("A Classic-WoW-style RPG reimagined as an idle game, the genre I spend the most time in (Clicker Heroes, Tap Titans, Slayer Legend, Idle Slayer, Legends of Idleon).", False)),
+        S(("Next on my list - idle games. ", True), ("A Classic-WoW-style RPG reimagined as an idle game, the genre I spend the most time in (Idle Maple Story, Slayer Legend, Legends of Idleon, Idle Slayer, Clicker Heroes).", False)),
     ]),
     ("h2", "Experience"),
     ("job", S(("Independent Financial Coach", True), ("  -  Self-employed  (2024 - Present)", False))),
@@ -81,7 +81,7 @@ cv_blocks = [
     ("job", S(("Omnichannel Data Analyst", True), ("  -  Viatris Inc.  (Dec 2022 - Sep 2023)", False))),
     ("bullets", [S(("Consolidated records into one master record per person across 70+ markets (Salesforce); fuzzy matching cut manual validation by 40%; cleaned 1M+ records with SQL.", False))]),
     ("job", S(("Business Intelligence Analyst", True), ("  -  Saksı Kampüs (early-stage edtech)  (Dec 2021 - Oct 2022)", False))),
-    ("bullets", [S(("Tracked retention, engagement and CAC in Google Analytics and Looker Studio and steered Meta Ads spend; wrote the business plan and growth projections behind a seed crowdfunding raise.", False))]),
+    ("bullets", [S(("Tracked retention, engagement and CAC in Google Analytics and Looker Studio and steered Meta Ads spend; wrote the business plan and growth projections behind a TRY 1.37M seed crowdfunding round (2022).", False))]),
     ("job", S(("Sales & Financial Analysis Intern", True), ("  -  Garanti BBVA Investment  (Jul 2021 - Sep 2021)", False))),
     ("bullets", [S(("Built DCF and comparable-company valuation models and set target prices for sell-side equity research.", False))]),
     ("h2", "Education"),
@@ -94,30 +94,32 @@ cv_blocks = [
     ("p", S(("English (full professional); Turkish (native); Portuguese (dual citizen).", False))),
 ]
 
-P1 = ("Lately I have been playing Idle Bank Tycoon, and at some point I stopped playing and started "
-      "taking notes. To me it reads like AdVenture Capitalist rebuilt for a modern phone audience: the "
-      "same idle backbone, but with a tighter economy, smarter monetization and far more visual "
-      "polish. Pulling a live idle economy apart like that is genuinely how I spend my spare time, so "
-      "when I saw the Game Economy Designer opening on the team, I had to write.")
-P2 = ("And I do not only play these systems, I build them. I have designed and balanced two games of "
-      "my own from scratch: a Pokemon-style turn-based RPG with online PvP, where every stat, move and "
-      "reward had to stay fair across real players, and RocketIO, a real-time multiplayer game built "
-      "on a missile economy and constant resource trade-offs. Both drilled in the lesson Idle Bank "
-      "Tycoon runs on, that resource management and economy design are two sides of one coin and the "
-      "balance is what keeps people playing. To put that against your game directly, I also ran a "
-      "self-directed economy study on Idle Bank Tycoon: a 400+ formula model in Excel and Google "
-      "Sheets with two live-ops levers, retention guardrails and an A/B plan that models a blended "
-      "+15.5% ARPDAU. It is linked below.")
-P3 = ("Before games, I spent three years as a data analyst across pharma, edtech and equity research, "
-      "turning messy data into decisions. That is the other half of what I would bring to Kolibri: a "
-      "data-driven read on an economy to sit beside the designer's feel for it. This role is the first "
-      "place I have found where the systems I love building and the analysis I am good at point at the "
-      "same goal.")
-P4 = ("And idle is simply the genre I live in. I have gone deep on Slayer Legend, Legends of Idleon, "
-      "Idle Slayer, Clicker Heroes and Tap Titans, and I keep my own more-indie idle project on my "
-      "to-build list, a Classic-WoW-style RPG reimagined as an idle game. I learn fast, I already have "
-      "built and balanced games to show for it, and this is honestly the role I have been working "
-      "toward. I would love to talk it through. Thank you for reading.")
+P1 = ("Lately, I have been playing Idle Bank Tycoon, and at some point I stopped playing and started "
+      "taking notes. It reads like AdVenture Capitalist rebuilt for a modern phone audience: the same "
+      "idle backbone, but with a tighter economy, smarter monetization, and far more visual polish. "
+      "Pulling a live idle economy apart like that is genuinely how I spend my spare time, so when I "
+      "saw the Game Economy Designer opening on the team, I had to write.")
+P2 = ("And I not only play these systems, but I build them. I have designed and balanced two games of "
+      "my own from scratch: a Pokemon-style turn-based RPG with online PvP, where I successfully "
+      "maintained balance so that every stat, move, and reward remained fair across all levels of the "
+      "game, and RocketIO, a real-time multiplayer game built on a missile economy and constant "
+      "resource trade-offs, where careful tuning is what keeps the matches competitive. Both "
+      "experiences reinforced the lesson I see in Idle Bank Tycoon: resource management and economic "
+      "design are two sides of the same coin, and the balance is what keeps people playing. To test "
+      "this directly in your context, I also conducted a self-directed economic study of Idle Bank "
+      "Tycoon, developing a model that included two live-ops levers, retention guardrails, and an A/B "
+      "plan, resulting in a modelled projection of a blended +15.5% ARPDAU. The results of this "
+      "analysis are linked below.")
+P3 = ("Before games, I spent 3 years as a data analyst across pharma, edtech, and equity research, "
+      "turning messy data into actionable insights. That is the other half of what I would bring to "
+      "Kolibri: a data-driven read on an economy to sit beside the designer's feel for it. This role "
+      "is the first place I have found where the systems I love building and the analysis I am good at "
+      "point at the same goal.")
+P4 = ("And idle is simply the genre I live in. I have gone deep on Idle Maple Story, Slayer Legend, "
+      "Legends of Idleon, Idle Slayer, and Clicker Heroes, and I keep my own more-indie idle project "
+      "on my to-build list, a Classic-WoW-style RPG reimagined as an idle game. I learn fast, I "
+      "already have built and balanced games to show for it, and this is honestly the role I have been "
+      "working toward. I would love to talk it through. Thank you for reading.")
 
 cl_blocks = [
     ("h1", NAME),
