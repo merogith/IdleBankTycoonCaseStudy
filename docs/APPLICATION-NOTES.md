@@ -3,6 +3,15 @@
 Internal notes on how these documents are built and how to submit them, so the CV and cover
 letter clear automated pre-screening *and* read as genuinely human to an AI-averse reviewer.
 
+## Source of truth
+
+Every fact in this packet (CV, cover letter, and both ATS mirrors) derives from
+**`Portfolio/MASTER-CV.md`** — the master CV + application system in the Portfolio repo. It
+holds the full record, the voice guide, the truthfulness guardrails, and the cover-letter /
+one-pager recipes. If a number, date, title or claim changes, **update `MASTER-CV.md` first**,
+then carry it here; facts flow one way so nothing across the application can contradict. This
+packet is the Game-Economy variant (`MASTER-CV.md` §9 · C) tailored to the Kolibri role.
+
 ## Two versions of each document, on purpose
 
 | Document | File | Use it for |
