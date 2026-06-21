@@ -54,15 +54,11 @@ cv_blocks = [
     ("contact", CONTACT_CV),
     ("h2", "Summary"),
     ("p", S((
-        "Game Economy Designer focused on free-to-play (F2P) and idle games, with three years of "
-        "data analysis across pharma, edtech and equity research. I balance game economies by the "
-        "numbers: sources and sinks, inflation control, progression curves, retention, and "
-        "monetization. To demonstrate the skill set directly, I built a full, self-directed "
-        "economy-design study on Idle Bank Tycoon - a parameter-driven model in Excel and Google "
-        "Sheets (400+ linked formulas) with two live-ops levers, ROI and monetization math, "
-        "sensitivity analysis, and an A/B test plan, modelling a blended ARPDAU lift of +15.5%. I "
-        "also build and ship my own browser games, so I read an economy from both the spreadsheet "
-        "and the code.", False))),
+        "I work a game economy from three sides at once: as a P&L, as a design system, and as the "
+        "code that runs it. Three years as a business and financial data analyst (pharma, edtech, "
+        "equity research) built the first; moving into game economy design and building my own games "
+        "built the rest. Economic modelling, statistics, monetization and KPIs are the toolkit; the "
+        "Idle Bank Tycoon case study, my portfolio and the cover letter are the evidence.", False))),
     ("h2", "Core Skills"),
     ("bullets", [
         S(("Game economy & F2P: ", True), ("economy modelling and balancing; sources/sinks and inflation control; progression curves; monetization (IAP, rewarded ads, ARPDAU, ARPPU, eCPM); retention (D1/D7/D30); player psychology, motivation and segmentation.", False)),
@@ -73,11 +69,11 @@ cv_blocks = [
     ]),
     ("h2", "Selected Projects"),
     ("bullets", [
-        S(("Idle Bank Tycoon - Game Economy Design Case Study ", True), ("(Excel/Google Sheets model, A/B design). Found the late-game problem in the numbers: by level 60, idle cash accumulates to 4,900-21,600x the next upgrade's cost, so progression stops mattering. Designed two live-ops levers, a hard-currency liquidity lock and income-scaled rewarded-ad tuning, and modelled each to a blended ARPDAU +15.5% (about $2M/year at static DAU), with a sensitivity grid and retention guardrails. My recommendation: ship the ad tuning first and treat the loan as the bigger retention bet.", False)),
-        S(("Free-to-Play Game Economy & Balance ", True), ("(Python, scikit-learn, SQL). Caught two premium items breaking the game (61% win rate, significant on a z-test) and slow coin inflation (sinks recover only ~63% of currency minted). Predicted likely future payers from their first three days (AUC 0.80) using D1/D7/D30 cohorts and turned it into an onboarding lever.", False)),
-        S(("US Stock-Market Valuation & Risk ", True), ("(Python, statsmodels, SQL). Across 150+ years, higher valuation (CAPE) predicts lower forward 10-year real returns (p ~ 1e-40); worst real drawdown -81%.", False)),
-        S(("Playable browser games ", True), ("(custom JavaScript engines, Supabase). Battle, a turn-based RPG with online PvP; RocketIO, a real-time hex-strategy game with 14 factions and an in-game missile economy. Built mobile-first and playable on phone and desktop. Portfolio: merogith.github.io/Portfolio", False)),
-        S(("Idle games roadmap. ", True), ("Building toward an idle tycoon and a single-player idle RPG. Idle systems are where I want to spend the next few years.", False)),
+        S(("Idle Bank Tycoon - Game Economy Design Case Study ", True), ("(economy design, monetization, A/B). A redesign aimed at exactly what this role owns: I diagnosed a late-game cash glut, then designed two live-ops monetization levers with anti-inflation guardrails, all in a documented, parameter-driven spreadsheet model. Modelled to a blended ~+15.5% ARPDAU, but the part I would point to is the call: ship the lower-risk ad lever first and treat the loan as a retention bet to be measured, not assumed. Full math, sensitivity and sources in the linked study.", False)),
+        S(("Free-to-Play Game Economy & Balance ", True), ("(Python, scikit-learn, SQL). The closest analog to live balancing: in a real F2P economy I caught two exploit-grade premium items and a slow currency inflation and shipped the fixes, the unexpected-behaviour problem this role exists to prevent. I also turned first-days cohort data into a model that flags likely payers early, the basis for a concrete onboarding lever. Methods and results in the portfolio.", False)),
+        S(("US Stock-Market Valuation & Risk ", True), ("(Python, statsmodels, SQL). The financial-analyst foundation under the design work: a 150-year study linking market valuation to long-run returns and drawdown risk, built to drive a real allocation call. Full analysis in the portfolio.", False)),
+        S(("Games I designed & balanced ", True), ("(custom JavaScript engines). Proof I balance economies inside real, playable games: Battle, a turn-based RPG with online PvP where every stat and reward has to stay fair, and RocketIO, a real-time strategy game built on a resource-and-missile economy. Both run on engines I wrote myself; playable in the portfolio (merogith.github.io/Portfolio).", False)),
+        S(("Next on my list - idle games. ", True), ("A Classic-WoW-style RPG reimagined as an idle game, the genre I spend the most time in (Clicker Heroes, Tap Titans, Slayer Legend, Idle Slayer, Legends of Idleon).", False)),
     ]),
     ("h2", "Experience"),
     ("job", S(("Independent Financial Coach", True), ("  -  Self-employed  (2024 - Present)", False))),
