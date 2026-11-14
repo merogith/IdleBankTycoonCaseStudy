@@ -1,4 +1,4 @@
-# Idle Bank Tycoon economy case study
+# Idle Bank Tycoon — Economy Design Study
 
 An independent study of late-game liquidity and rewarded ads in Idle Bank Tycoon. The Excel model compares two design proposals under adjustable assumptions and includes sensitivity analysis and an A/B test plan. The reported changes in average revenue per daily active user (ARPDAU) are scenario outputs.
 
