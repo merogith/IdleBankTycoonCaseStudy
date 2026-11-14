@@ -1,6 +1,6 @@
-# Idle Bank Tycoon — Game Economy Design Case Study (+15.5% modelled ARPDAU)
+# Idle Bank Tycoon economy case study
 
-A self-directed economy-design study for the Game Economy Designer role at Kolibri Games (Idle Bank Tycoon team). It models two economy levers, a late-game liquidity-lock mechanic and rewarded-ad tuning, each as a parameter-driven model with ROI and monetisation math, a sensitivity analysis, and an A/B test plan.
+An independent study of late-game liquidity and rewarded ads in Idle Bank Tycoon. The Excel model compares two design proposals under adjustable assumptions and includes sensitivity analysis and an A/B test plan. The reported changes in average revenue per daily active user (ARPDAU) are scenario outputs.
 
 **📊 [The model: `Idle_Bank_Tycoon_Economy_Model.xlsx`](./Idle_Bank_Tycoon_Economy_Model.xlsx)**  ·  **📄 [Full case study (PDF)](./docs/case-study.pdf)**
 
