@@ -1,0 +1,19 @@
+{
+  "model-inputs.json": "76abb00ffde552a393e12547fb56b472d7cfc036309eb788d89d6cedf00aa5df",
+  "case-study.template.html": "bbe223dc4b90b8fd29688db428b9837619ac1975df3da2ee6efc280288754f0c",
+  "README.template.md": "0cb7cc935e552ecc12a06c86bcf8ed20fd86d96f46035fdc30f412ef1b191063",
+  "scripts/model.py": "ba04efdda4393596e27d35b94444ac459d97957086abc23bb35db041de704da6",
+  "scripts/build_model.py": "6bec54b5a53a29d951dddb7f72934072d5c7e6f4f5b4c059d7bba1ff9bf343cf",
+  "scripts/build_pdf.py": "3d01786f5e51ec47b84b746722314196091e10157d82ce194d4129373e639f1d",
+  "requirements-build.txt": "e76ca82b4f3cde89a92aa22b247ba8fbb1828708c6fa533d087a1019721386bd",
+  "index.html": "799079b23a9cf985b0d5a6ee68dd71fad1b4558e07365dae33d973c8b5219bd9",
+  "README.md": "3fb3d959abb1f95581f3543c2175b6416bf64f9ad38e97e97f280631c0da512d",
+  "style.css": "26b9c843160696ab5b4be7d25fe97c9ea6153a445bc4da1dfd6052ecd01b5e81",
+  "fonts.css": "2eff8e5c600fbd80d182924236512e08046279cb48ea2a5c71d3ae6f8a2c0b2f",
+  "Idle_Bank_Tycoon_Economy_Model.xlsx": "c6a9f2cd5e4be225889eaef62dab7e0f80ae488a413cff3643a32442da780d12",
+  "docs/model-metrics.json": "8b82af07c29398971a74eb4a7890e49bc723d9318a550aa0e74a059634ae622b",
+  "docs/case-study.pdf": "7c3871412ee5316ab8237f8031453103bfe7b65bbd06353c6cf4b5c8fc0b8257",
+  "charts/01-income-vs-cost.png": "ed211e609ea2803c6f2861f5735e90ec6537f751219d2ee26df713f70a09db82",
+  "charts/02-idle-cash-surplus.png": "1a24d68a233364a327cddd1d91fe3748b2ae1232b8a2e746d8817ca2b3923d77",
+  "charts/03-loan-sensitivity.png": "cd4503c9a540ea6530119e7e2a0751b605c09fcc3f8cca5938e6cfde9386ac47"
+}

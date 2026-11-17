@@ -13,3 +13,7 @@ desktop.ini
 
 # Tooling / local session files
 .claude/
+
+# Python build cache
+__pycache__/
+*.pyc
